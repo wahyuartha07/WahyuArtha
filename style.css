@@ -49,9 +49,10 @@ body {
   color: var(--primary);
 }
 
-.navbar .navbar-nav{
+.navbar .navbar-nav {
   margin-left: -10rem;
 }
+
 .navbar .navbar-nav a {
   color: #fff;
   display: inline-block;
@@ -108,11 +109,9 @@ body {
   width: 100%;
   height: 30%;
   bottom: 0;
-  background: linear-gradient(
-    0deg,
-    rgba(1, 1, 3) 8%,
-    rgba(255, 255, 255, 0) 50%
-  );
+  background: linear-gradient(0deg,
+      rgba(1, 1, 3) 8%,
+      rgba(255, 255, 255, 0) 50%);
 }
 
 .hero .content {
@@ -157,7 +156,8 @@ body {
 .about,
 .contact,
 .articles,
-.footer {
+.footer,
+.container-projek {
   padding: 8rem 7% 1.4rem;
 }
 
@@ -180,6 +180,7 @@ body {
   font-weight: 100;
   line-height: 1.6;
 }
+
 .about .row {
   display: flex;
 }
@@ -212,8 +213,9 @@ body {
   line-height: 1.2;
   color: #b6895b;
 }
+
 .about .row .content .p2 {
-color: #fff;
+  color: #fff;
 }
 
 .contact .row form {
@@ -222,36 +224,32 @@ color: #fff;
   text-align: center;
 }
 
-.contact .socials a{
-color: #fff;
+.contact .socials a {
+  color: #fff;
 }
 
 /* projek start */
-.container-projek{
-  height: 90vh;
+.container-projek {
+  height: 100vh;
 }
 
 .articles {
-  padding-top: 13rem;
   display: flex;
-  max-width: 1200px;
+  max-width: 100%;
   margin-inline: auto;
   padding-inline: 24px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 34px;
-  margin-top: 1rem;
+  gap: 40px;
 }
 
 
-.articles .judul {
-  position: absolute;
-  margin-top: -4rem;
-  margin-left: 30rem;
+.container-judul .judul {
+  padding-top: 10rem;
   text-align: center;
   font-size: 2.2rem;
 }
 
-.articles .judul span{
+.container-judul .judul span {
   color: var(--primary);
 }
 
@@ -336,12 +334,12 @@ article:has(:hover, :focus) {
 }
 
 .sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
+  clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
   width: 1px;
 }
 
@@ -351,20 +349,24 @@ article:has(:hover, :focus) {
     grid-template-columns: 100px 1fr;
     gap: 16px;
   }
+
   .article-body {
     padding-left: 0;
   }
+
   figure {
     width: 100%;
     height: 100%;
     overflow: hidden;
   }
+
   figure img {
     height: 100%;
     aspect-ratio: 1;
     object-fit: cover;
   }
 }
+
 /* prjek end */
 
 
@@ -422,6 +424,7 @@ footer .links a {
   #hamburger-menu {
     display: inline-block;
   }
+
   .navbar .navbar-nav {
     position: absolute;
     top: 100%;
@@ -457,6 +460,16 @@ footer .links a {
   .about .row {
     flex-wrap: wrap;
   }
+
+  .articles {
+    width: 80%;
+    display: flex;
+    max-width: 80%;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 40px;
+  } 
 }
 
 /* mobile phone */
