@@ -52,8 +52,9 @@ body {
 .navbar .navbar-nav a {
   color: #fff;
   display: inline-block;
-  font-size: 1.3rem;
-  margin: 0 1rem;
+  font-size: 1rem;
+  margin: 0 1.2rem;
+  padding-left: -10rem;
 }
 
 .navbar .navbar-nav a:hover {
@@ -159,18 +160,17 @@ body {
 }
 
 .about h2,
-.contact h2
-.judul h2 {
+.contact h2 {
   text-align: center;
   font-size: 2.2rem;
   margin-bottom: 3rem;
 }
 
 .about h2 span,
-.contact h2 span 
-.judul h2 span {
+.contact h2 span {
   color: var(--primary);
 }
+
 .contact {
   text-align: center;
   max-width: 30rem;
@@ -220,7 +220,39 @@ color: #fff;
   text-align: center;
 }
 
+.contact .socials a{
+color: #fff;
+}
+
 /* projek start */
+.container-projek{
+  height: 90vh;
+}
+
+.articles {
+  padding-top: 13rem;
+  display: flex;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 34px;
+  margin-top: 1rem;
+}
+
+
+.articles .judul {
+  position: absolute;
+  margin-top: -4rem;
+  margin-left: 30rem;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.articles .judul span{
+  color: var(--primary);
+}
+
 article {
   --img-scale: 1.001;
   --title-color: black;
@@ -267,9 +299,6 @@ article img {
   transition: transform 0.4s ease-in-out;
 }
 
-.article-body {
-  padding: 24px;
-}
 
 article a {
   display: inline-flex;
@@ -301,50 +330,14 @@ article:has(:hover, :focus) {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-
-/************************ 
-Generic layout (demo looks)
-**************************/
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: "poppins", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  min-height: 90vh;
-}
-
-.articles {
-  display: flex;
-  max-width: 1200px;
-  margin-inline: auto;
-  padding-inline: 24px;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 34px;
-  margin-top: 2rem;
-}
-
-.articles .judul{
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
   position: absolute;
-  margin-top: -4rem;
-  margin-left: 32rem;
-  display: flex;
-  text-align: center;
-  font-size: 2.2rem;
-}
-@media screen and (max-width: 960px) {
-  article {
-    container: card/inline-size;
-  }
-  .article-body p {
-    display: none;
-  }
+  white-space: nowrap; 
+  width: 1px;
 }
 
 @container card (min-width: 380px) {
@@ -366,16 +359,6 @@ body {
     aspect-ratio: 1;
     object-fit: cover;
   }
-}
-
-.sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap; 
-  width: 1px;
 }
 /* prjek end */
 

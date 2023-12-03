@@ -1,152 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.png" />
-    <title>Way</title>
 
-    <!-- font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.png" />
+  <title>Way</title>
 
-    <!-- feather icon  -->
-    <script src="https://unpkg.com/feather-icons"></script>
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet" />
 
-    <!-- My style  -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Navbar start  -->
-    <nav class="navbar">
-      <a href="#" class="navbar-logo">Wahyu<span>Artha</span>.</a>
+  <!-- feather icon  -->
+  <script src="https://unpkg.com/feather-icons"></script>
 
-      <div class="navbar-nav">
-        <a href="#">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#projek">My Projects</a>
-        <a href="#cntoact">Contact</a>
+  <!-- My style  -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navbar start  -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">Wahyu<span>Artha</span>.</a>
+
+    <div class="navbar-nav">
+      <a href="#">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#projek">My Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="navbar-ekstra">
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+  </nav>
+  <!-- Navbar end  -->
+
+  <!-- hero section start -->
+  <section class="hero" id="home">
+    <main class="content">
+      <h1>Selamat Datang.</h1>
+      <p>Let me introduce myself</p>
+      <!-- <a href="#" class="cta">This is Me</a> -->
+    </main>
+  </section>
+
+  <!-- hero section end -->
+
+  <!-- About section start -->
+  <section id="about" class="about">
+    <h2><span>About</span> Me</h2>
+    
+    <div class="row">
+      <div class="about-img">
+        <img src="WAA-bg.jpg" alt="About Me" />
       </div>
-
-      <div class="navbar-ekstra">
-        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      <br>
+      <div class="content">
+        <h3>Wahyu Artha Anugrah</h3>
+        <p>
+          Saya adalah seorang mahasiswa S1 pendidikan teknik informatika di
+          universitas negeri yogyakarta yang berumur 20 tahun. Saya tinggal di
+          sebuah desa di Banjarnegara yaitu desa Gemuruh, hobi saya adalah
+          bermain computer, hampir setiap harinaya mengoprasikan computer,
+          entah untuk belajar ataupun mencari informasi.
+        </p>
+        <p class="p2">
+          Alasan saya memilih prodi PTI ini karena saya ingin menjadi
+          programmer professional dan bisa juga bisa menjadi tenaga pendidik
+          yang profesional.
+        </p>
       </div>
-    </nav>
-    <!-- Navbar end  -->
-
-    <!-- hero section start -->
-    <section class="hero" id="home">
-      <main class="content">
-        <h1>Selamat Datang.</h1>
-        <p>Let me introduce myself</p>
-        <!-- <a href="#" class="cta">This is Me</a> -->
-      </main>
-    </section>
-
-    <!-- hero section end -->
-
-    <!-- About section start -->
-    <section id="about" class="about">
-      <h2><span>About</span> Me</h2>
-
-      <div class="row">
-        <div class="about-img">
-          <img src="WAA-bg.jpg" alt="About Me" />
-        </div>
-        <br>
-        <div class="content">
-          <h3>Wahyu Artha Anugrah</h3>
+    </div>
+  </section>
+  <!-- About section end -->
+  
+  <!-- my project start -->
+  <section class="container-projek">
+  <section class="articles" id="projek">
+    <h2 class="judul"><span>My </span> Projects</h2>
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src="/panenku.png" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>Panenku.com</h2>
           <p>
-            Saya adalah seorang mahasiswa S1 pendidikan teknik informatika di
-            universitas negeri yogyakarta yang berumur 20 tahun. Saya tinggal di
-            sebuah desa di Banjarnegara yaitu desa Gemuruh, hobi saya adalah
-            bermain computer, hampir setiap harinaya mengoprasikan computer,
-            entah untuk belajar ataupun mencari informasi.
+            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum
+            eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
           </p>
-          <p class="p2">
-            Alasan saya memilih prodi PTI ini karena saya ingin menjadi
-            programmer professional dan bisa juga bisa menjadi tenaga pendidik
-            yang profesional.
-          </p>
+          <a href="https://panenkuindonesia.com/" class="read-more">
+            Read more <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
         </div>
       </div>
-    </section>
-    <!-- About section end -->
+    </article>
+    <article>
 
-    <!-- my project start -->
-    <section class="articles" id="projek">
-      <h2 class="judul"><span>My</span> Projects</h2>
-      <article>
-        <div class="article-wrapper">
-          <figure>
-            <img src="/panenku.png" alt="" />
-          </figure>
-          <div class="article-body">
-            <h2>Panenku.com</h2>
-            <p>
-              Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
-            </p>
-            <a href="https://panenkuindonesia.com/" class="read-more">
-              Read more <span class="sr-only">about this is some title</span>
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </div>
+      <div class="article-wrapper">
+        <figure>
+          <img src="/autodrive.png" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>AutoDrive.com</h2>
+          <p>
+            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum
+            eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+          </p>
+          <a href="#" class="read-more">
+            Read more <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
         </div>
-      </article>
-      <article>
-    
-        <div class="article-wrapper">
-          <figure>
-            <img src="/autodrive.png" alt="" />
-          </figure>
-          <div class="article-body">
-            <h2>AutoDrive.com</h2>
-            <p>
-              Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
-            </p>
-            <a href="#" class="read-more">
-              Read more <span class="sr-only">about this is some title</span>
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </article>
-      <article>
-    
-        <div class="article-wrapper">
-          <figure>
-            <img src="/wahyuartha.png" alt="" />
-          </figure>
-          <div class="article-body">
-            <h2>MyWebsite.com</h2>
-            <p>
-              Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
-            </p>
-            <a href="#" class="read-more">
-              Read more <span class="sr-only">about this is some title</span>
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </article>
-    </section>
+      </div>
+    </article>
+    <article>
 
-    <!-- my project end -->
+      <div class="article-wrapper">
+        <figure>
+          <img src="/wahyuartha.png" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>MyWebsite.com</h2>
+          <p>
+            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum
+            eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+          </p>
+          <a href="#" class="read-more">
+            Read more <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+  </section>
+</section>
 
-    <!-- contact start -->
-    <section>
-      <div id="contact" class="contact">
+  <!-- my project end -->
+
+  <!-- contact start -->
+  <section>
+    <div id="contact" class="contact">
       <h2><span>Contact</span> Me</h2>
       <p>You can contact me via</p>
       <br>
@@ -156,32 +167,34 @@
         <a href="wahyuartha.2022@student.uny.ac.id"><i data-feather="mail"></i></a>
         <a href="https://goo.gl/maps/txmAfQxz4YxQp5AA6"><i data-feather="map-pin"></i></a>
       </div>
-    </section>
-    <!-- contact end -->
-    
-    <!-- footer start -->
-   
-      <footer>
-        <div class="links">
-          <a href="#home">Home</a>
-          <a href="#about">About Me</a>
-          <a href="#contact">Contact Me</a>
-        </div>
-        <div class="credit">
-          <p>Created by <a href="">Wahyu Artha Anugrah</a>
-            | &copy; 2023.</p>
-          </div>
-        </footer>
-    
-        <!-- footer enda -->
-        
+    </div>
+  </section>
+  <!-- contact end -->
 
-    <!-- feather icon  -->
-    <script>
-      feather.replace();
-    </script>
+  <!-- footer start -->
 
-    <!-- my javascript -->
-    <script src="script.js"></script>
-  </body>
+  <footer>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+    <div class="credit">
+      <p>Created by <a href="">Wahyu Artha Anugrah</a>
+        | &copy; 2023.</p>
+    </div>
+  </footer>
+
+  <!-- footer enda -->
+
+
+  <!-- feather icon  -->
+  <script>
+    feather.replace();
+  </script>
+
+  <!-- my javascript -->
+  <script src="script.js"></script>
+</body>
+
 </html>
