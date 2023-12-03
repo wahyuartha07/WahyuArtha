@@ -9,6 +9,7 @@
   box-sizing: border-box;
   outline: none;
   border: none;
+  transition: all 0.4 s ease;
   text-decoration: none;
 }
 
